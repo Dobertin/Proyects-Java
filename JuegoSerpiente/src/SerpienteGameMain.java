@@ -1,9 +1,9 @@
 import javax.swing.*;
 
-public class JuegoSerpiente extends JFrame {
+public class SerpienteGameMain extends JFrame {
     private PaneldeJuego paneldeJuego;
 
-    public JuegoSerpiente() {
+    public SerpienteGameMain() {
         paneldeJuego = new PaneldeJuego();
         add(paneldeJuego);
         pack();
@@ -15,7 +15,7 @@ public class JuegoSerpiente extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JuegoSerpiente game = new JuegoSerpiente();
+            SerpienteGameMain game = new SerpienteGameMain();
             game.setVisible(true);
         });
     }

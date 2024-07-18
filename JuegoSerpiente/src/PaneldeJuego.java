@@ -8,7 +8,7 @@ import java.util.TimerTask;
 public class PaneldeJuego extends JPanel {
     private static final int CELL_SIZE = 20;
     private static final int GRID_SIZE = 20;
-    private static final int PANEL_SIZE = GRID_SIZE * CELL_SIZE + 40; // Adding margin for double-line border
+    private static final int PANEL_SIZE = GRID_SIZE * CELL_SIZE + 40; // Se adiciono un margen para agregar una doble liena de borde
     private static final int DELAY = 100;
 
     private Serpiente serpiente;
