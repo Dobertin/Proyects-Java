@@ -1,13 +1,13 @@
 import javax.swing.*;
 
-public class SnakeGame extends JFrame {
-    private GamePanel gamePanel;
+public class JuegoSerpiente extends JFrame {
+    private PaneldeJuego paneldeJuego;
 
-    public SnakeGame() {
-        gamePanel = new GamePanel();
-        add(gamePanel);
+    public JuegoSerpiente() {
+        paneldeJuego = new PaneldeJuego();
+        add(paneldeJuego);
         pack();
-        setTitle("Juego de la Culebra");
+        setTitle("Juego de la Serpiente");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -15,7 +15,7 @@ public class SnakeGame extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            SnakeGame game = new SnakeGame();
+            JuegoSerpiente game = new JuegoSerpiente();
             game.setVisible(true);
         });
     }

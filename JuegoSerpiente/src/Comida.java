@@ -1,12 +1,12 @@
 import java.awt.*;
 import java.util.Random;
 
-public class Food {
+public class Comida {
     private Point position;
     private static final int MAX_X = 20;
     private static final int MAX_Y = 20;
 
-    public Food() {
+    public Comida() {
         position = new Point();
         generateNewPosition();
     }

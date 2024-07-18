@@ -2,13 +2,13 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Snake {
+public class Serpiente {
     private List<Point> body;
     private boolean growing;
 
-    public Snake() {
+    public Serpiente() {
         body = new ArrayList<>();
-        body.add(new Point(10, 10));  // Starting position
+        body.add(new Point(10, 10));  // Posicion inicial
         growing = false;
     }
 

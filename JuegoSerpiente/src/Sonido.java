@@ -2,13 +2,14 @@ import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
-public class Sound {
+public class Sonido {
     private Clip clip;
 
-    public Sound(String soundFile) {
+    public Sonido(String soundFile) {
         try {
             AudioInputStream originalStream = AudioSystem.getAudioInputStream(new File(soundFile).getAbsoluteFile());
             AudioFormat baseFormat = originalStream.getFormat();
+            // Se debe formatear el archivo .wav para ser compatible con la configuración de sonido del sistema
             AudioFormat decodedFormat = new AudioFormat(
                     AudioFormat.Encoding.PCM_SIGNED,
                     baseFormat.getSampleRate(),
@@ -30,7 +31,7 @@ public class Sound {
     public void play() {
         if (clip != null) {
             System.out.println("Reproduciendo sonido: " + clip.getFrameLength());
-            clip.setFramePosition(0);  // Rewind to the beginning
+            clip.setFramePosition(0);  // Regresa al inicio del clip
             clip.start();
         } else {
             System.out.println("Clip no cargado correctamente.");
